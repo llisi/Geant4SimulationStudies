@@ -1,0 +1,7 @@
+/Users/Luc/Documents/Research/ScintillatorStudies/geant4sim/Versions/LYSO2.00/build/CMakeFiles/install/local.dir
+/Users/Luc/Documents/Research/ScintillatorStudies/geant4sim/Versions/LYSO2.00/build/CMakeFiles/install/strip.dir
+/Users/Luc/Documents/Research/ScintillatorStudies/geant4sim/Versions/LYSO2.00/build/CMakeFiles/install.dir
+/Users/Luc/Documents/Research/ScintillatorStudies/geant4sim/Versions/LYSO2.00/build/CMakeFiles/list_install_components.dir
+/Users/Luc/Documents/Research/ScintillatorStudies/geant4sim/Versions/LYSO2.00/build/CMakeFiles/rebuild_cache.dir
+/Users/Luc/Documents/Research/ScintillatorStudies/geant4sim/Versions/LYSO2.00/build/CMakeFiles/edit_cache.dir
+/Users/Luc/Documents/Research/ScintillatorStudies/geant4sim/Versions/LYSO2.00/build/CMakeFiles/LYSOScint.dir

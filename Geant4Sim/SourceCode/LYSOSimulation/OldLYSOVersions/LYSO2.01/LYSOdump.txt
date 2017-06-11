@@ -1,0 +1,30 @@
+Material:     LYSO    density:  7.400 g/cm3   RadL:   1.141 cm   Nucl.Int.Length:  22.540 cm 
+                       Imean: 464.099 eV 
+
+   --->  Element: Lu (Lu)   Z = 71.0   N =   175   A = 174.967 g/mole
+         --->  Isotope: Lu175   Z = 71   N = 175   A = 174.94 g/mole   abundance: 97.410 %
+         --->  Isotope: Lu176   Z = 71   N = 176   A = 175.94 g/mole   abundance:  2.590 %
+          ElmMassFraction:  39.00 %  ElmAbundance  19.68 % 
+
+   --->  Element: Y (Y)   Z = 39.0   N =    89   A = 88.906 g/mole
+         --->  Isotope:   Y89   Z = 39   N =  89   A =  88.91 g/mole   abundance: 100.000 %
+          ElmMassFraction:  20.00 %  ElmAbundance  19.86 % 
+
+   --->  Element: Si (Si)   Z = 14.0   N =    28   A = 28.085 g/mole
+         --->  Isotope:  Si28   Z = 14   N =  28   A =  27.98 g/mole   abundance: 92.230 %
+         --->  Isotope:  Si29   Z = 14   N =  29   A =  28.98 g/mole   abundance:  4.683 %
+         --->  Isotope:  Si30   Z = 14   N =  30   A =  29.97 g/mole   abundance:  3.087 %
+          ElmMassFraction:   6.00 %  ElmAbundance  18.86 % 
+
+   --->  Element: O (O)   Z =  8.0   N =    16   A = 15.999 g/mole
+         --->  Isotope:   O16   Z =  8   N =  16   A =  15.99 g/mole   abundance: 99.757 %
+         --->  Isotope:   O17   Z =  8   N =  17   A =  17.00 g/mole   abundance:  0.038 %
+         --->  Isotope:   O18   Z =  8   N =  18   A =  18.00 g/mole   abundance:  0.205 %
+          ElmMassFraction:   4.00 %  ElmAbundance  22.07 % 
+
+   --->  Element: Ce (Ce)   Z = 58.0   N =   140   A = 140.115 g/mole
+         --->  Isotope: Ce136   Z = 58   N = 136   A = 135.91 g/mole   abundance:  0.185 %
+         --->  Isotope: Ce138   Z = 58   N = 138   A = 137.91 g/mole   abundance:  0.251 %
+         --->  Isotope: Ce140   Z = 58   N = 140   A = 139.91 g/mole   abundance: 88.450 %
+         --->  Isotope: Ce142   Z = 58   N = 142   A = 141.91 g/mole   abundance: 11.114 %
+          ElmMassFraction:  31.00 %  ElmAbundance  19.53 %

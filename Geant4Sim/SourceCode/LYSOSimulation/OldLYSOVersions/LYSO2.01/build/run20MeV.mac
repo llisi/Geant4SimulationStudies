@@ -1,0 +1,35 @@
+# Can be run in batch, without graphic
+# or interactively: Idle> /control/execute run1.mac
+#
+# Change the default number of workers (in multi-threading mode) 
+#/run/numberOfWorkers 4
+#
+# Initialize kernel
+/run/initialize
+#
+/control/verbose 1
+/run/verbose 1
+/event/verbose 0
+/tracking/verbose 0
+# 
+# gamma 6 MeV to the direction (0.,0.,1.)
+#
+/gps/particle gamma
+
+/gps/pos/type Beam
+
+/gps/pos/centre -7 0. 0. cm
+/gps/pos/rot1 0 1 0
+/gps/pos/rot2 0 0 1
+
+/gps/pos/halfy 0 cm
+/gps/pos/sigma_y 0.1 cm
+
+/gps/direction 1 0 0
+
+/gps/ene/type Mono
+/gps/ene/mono 20 MeV
+#
+/run/beamOn 100000
+# 
+

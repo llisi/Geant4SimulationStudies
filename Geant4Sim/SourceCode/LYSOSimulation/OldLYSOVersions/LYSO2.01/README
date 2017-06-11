@@ -1,0 +1,33 @@
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+INTRO:
+
+This is the very very early workings of code that's ultimate 
+goal is go simulate a LYSO scintillator interacting with 
+~1-100 MeV photons. 
+
+Currently, this is just a state where geometry and classes in Geant4
+are being tested. This is no were near a final product
+
+
+
+HOW TO RUN:
+
+sudo cmake -DGeant4_DIR=path_to_Geant4_installation/lib[64]/Geant4-10.0.0/ ../
+sudo make -j 2 LYSOScint
+./LYSOScint
+
+Contact: llisi@utexas.edu
+
+VERSION 1.02
+
+Hopefully the fully modeled scintillator as it is going to come to us. Reflector material is BaSO4 which I think is similar to this: 
+
+http://www.optopolymer.de/pdf/OptoPolymer-en.pdf
+
+Still to do:
+
+Sensitive detector stuff
+Optical physics 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
