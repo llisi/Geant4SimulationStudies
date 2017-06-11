@@ -293,7 +293,7 @@ copyNumber = 0;
                         fCheckOverlaps);
     }
 }
-
+/*
 //
 //Oustide Reflectors
 //
@@ -377,7 +377,7 @@ new G4PVPlacement(0,
                   0,
                   fCheckOverlaps);
   
-
+  */
   //
   // Always return the physical World
   //
