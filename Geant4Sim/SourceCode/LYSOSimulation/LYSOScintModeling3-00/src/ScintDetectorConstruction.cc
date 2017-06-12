@@ -96,15 +96,15 @@ void ScintDetectorConstruction::DefineMaterials()
 G4VPhysicalVolume* ScintDetectorConstruction::DefineVolumes()
 {
   //Geometry Parameters
-  fNofLayers = 50.*60.;
   G4int copyNumber;
 
 
   // z by x pixel grid. Laser direction in Z
 
-  G4double nPixels_Z = 60;
-  G4double nPixels_X = 50;
+  G4double nPixels_Z = 11;
+  G4double nPixels_X = 7;
 
+  fNofLayers = nPixels_X*nPixels_Z;
   G4double pixel_XZ = 1.2*mm;
   G4double pixelHeight= 12*mm;
 
@@ -133,7 +133,7 @@ G4VPhysicalVolume* ScintDetectorConstruction::DefineVolumes()
 
   // We let the front and back reflector be the full length and LR smaller to fit the pieces together
   G4double FBOuterReflectorLength = TotalSize_X;
-  G4double LROuterReflectorLength = TotalSize_Y - 2*OuterReflectorThickness;  // to avoid overlap
+  G4double LROuterReflectorLength = TotalSize_Z - 2*OuterReflectorThickness;  // to avoid overlap
 
 
   G4double BottomReflector_X = TotalSize_X;
@@ -147,9 +147,9 @@ G4VPhysicalVolume* ScintDetectorConstruction::DefineVolumes()
 
   
   //World Size
-  G4double world_X = TotalSize_X*2;
-  G4double world_Y = TotalSize_Y*2;
-  G4double world_Z = TotalSize_Z*2;
+  G4double world_X = TotalSize_X*1.2;
+  G4double world_Y = TotalSize_Y*1.2;
+  G4double world_Z = TotalSize_Z*1.2;
 
   //Set the materials
 
@@ -246,7 +246,7 @@ auto InnerReflectorNormZ_LV = new G4LogicalVolume(InnerReflectorNormZ_S,
                                               relfectorMaterial,
                                               "ReflectorLV");
 
-//------------------------ Reflectors normal to x
+// Inside Reflectors normal to x
 // These are full length
 
 copyNumber = 0;
@@ -270,7 +270,7 @@ for(G4int i=1; i < nPixels_X; i++){
 
     }
 
-//------------------------ Reflectors normal to z
+// Inside Reflectors normal to z
 copyNumber = 0;
 
   for(G4int i=1; i <= nPixels_X ;i++){
@@ -293,30 +293,36 @@ copyNumber = 0;
                         fCheckOverlaps);
     }
 }
-/*
+
+
+
 //
-//Oustide Reflectors
+// Oustide Reflectors
 //
 
-//--------------------------- Normal to x
+
+// Outside Normal to x
 
 G4Box* reflectorOutside1S = new G4Box("ReflectorOutisde1",
-                                       reflectorOutside1_x,
-                                       reflectorOutside1_y,
-                                       reflectorOutside1_z);
+                                       OuterReflectorThickness/2,
+                                       pixelHeight/2,
+                                       LROuterReflectorLength/2);
 
 auto reflectorOutside1LV = new G4LogicalVolume(reflectorOutside1S,
                                               relfectorMaterial,
                                               "ReflectorOutside1LV");
-reflectorPos_z = -0.65;
+
+ReflectorPos_Z = 0;
+ReflectorPos_Y = 0;
 
 for(G4int i=0;i<2;i++){
 
   copyNumber = i;
   
-  reflectorPos_x = (-38.35*mm - 0.85*mm) + (78.4*mm * i);
+  ReflectorPos_X = (TotalSize_X/2 - OuterReflectorThickness/2) - (TotalSize_X - OuterReflectorThickness)*i;
+
   new G4PVPlacement(0,
-                    G4ThreeVector(reflectorPos_x,reflectorPos_y,reflectorPos_z),
+                    G4ThreeVector(ReflectorPos_X,ReflectorPos_Y,ReflectorPos_Z),
                     reflectorOutside1LV,
                     "ReflectorOutside",
                     worldLV,
@@ -325,25 +331,27 @@ for(G4int i=0;i<2;i++){
                     fCheckOverlaps);
 }
 
+
 //-------------------------- Normal to z
 
 G4Box* reflectorOutside2S = new G4Box("ReflectorOutside2",
-                                      reflectorOutside2_x,
-                                      reflectorOutside2_y,
-                                      reflectorOutside2_z);
+                                      FBOuterReflectorLength/2,
+                                      pixelHeight/2,
+                                      OuterReflectorThickness/2);
 
 auto reflectorOutside2LV = new G4LogicalVolume(reflectorOutside2S,
                                               relfectorMaterial,
                                               "ReflectorOutisde2LV");
-reflectorPos_x = 0;
+ReflectorPos_X = 0;
+ReflectorPos_Y = 0;
 
 for(G4int i=0;i<2;i++){
 
   copyNumber = i*-1;
 
-  reflectorPos_z = (-33.35*mm) + (65.4*mm * i);
+  ReflectorPos_Z = (TotalSize_Z/2 - OuterReflectorThickness/2) - (TotalSize_Z - OuterReflectorThickness)*i;
   new G4PVPlacement(0,
-                    G4ThreeVector(reflectorPos_x,reflectorPos_y,reflectorPos_z),
+                    G4ThreeVector(ReflectorPos_X,ReflectorPos_Y,ReflectorPos_Z),
                     reflectorOutside2LV,
                     "ReflectorOutside",
                     worldLV,
@@ -352,24 +360,26 @@ for(G4int i=0;i<2;i++){
                     fCheckOverlaps);
 }
 
+
 //
 // Bottom Reflector
 //
 
 G4Box* reflectorBottomS = new G4Box("ReflectorBottom",
-                                     reflectorBottom_x,
-                                     reflectorBottom_y,
-                                     reflectorBottom_z);
+                                     TotalSize_X/2,
+                                     OuterReflectorThickness/2,
+                                     TotalSize_Z/2);
 
 auto reflectorBottomLV = new G4LogicalVolume(reflectorBottomS,
                                              relfectorMaterial,
                                              "ReflectorBottomLV");
-reflectorPos_x = 0;
-reflectorPos_y = -6.5;
-reflectorPos_z = -0.65;
+ReflectorPos_X = 0;
+ReflectorPos_Z = 0;
+ReflectorPos_Y = -1*(pixelHeight/2 + OuterReflectorThickness/2);
+
 
 new G4PVPlacement(0,
-                  G4ThreeVector(reflectorPos_x,reflectorPos_y,reflectorPos_z),
+                  G4ThreeVector(ReflectorPos_X,ReflectorPos_Y,ReflectorPos_Z),
                   reflectorBottomLV,
                   "ReflectorBottom",
                   worldLV,
@@ -377,7 +387,7 @@ new G4PVPlacement(0,
                   0,
                   fCheckOverlaps);
   
-  */
+
   //
   // Always return the physical World
   //

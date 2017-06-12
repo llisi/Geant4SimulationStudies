@@ -1,4 +1,4 @@
-# Install script for directory: /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling
+# Install script for directory: /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -28,7 +28,7 @@ if(NOT CMAKE_INSTALL_COMPONENT)
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/build/LYSOScint")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/build/LYSOScint")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/LYSOScint" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/LYSOScint")
     execute_process(COMMAND /usr/bin/install_name_tool
@@ -48,5 +48,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

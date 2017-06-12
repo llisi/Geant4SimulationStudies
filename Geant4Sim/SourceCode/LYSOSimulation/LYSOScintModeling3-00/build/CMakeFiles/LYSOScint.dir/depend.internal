@@ -4,7 +4,7 @@
 CMakeFiles/LYSOScint.dir/LYSOScint.cc.o
  ../include/ScintActionInitialization.hh
  ../include/ScintDetectorConstruction.hh
- /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/LYSOScint.cc
+ /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/LYSOScint.cc
  /usr/local/include/Geant4/CLHEP/Geometry/BasicVector3D.h
  /usr/local/include/Geant4/CLHEP/Geometry/Normal3D.h
  /usr/local/include/Geant4/CLHEP/Geometry/Plane3D.h
@@ -631,7 +631,7 @@ CMakeFiles/LYSOScint.dir/src/ScintActionInitialization.cc.o
  ../include/ScintPrimaryGeneratorAction.hh
  ../include/ScintRunAction.hh
  ../include/TrackingAction.hh
- /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/src/ScintActionInitialization.cc
+ /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintActionInitialization.cc
  /usr/local/include/Geant4/CLHEP/Utility/defs.h
  /usr/local/include/Geant4/CLHEP/Vector/ThreeVector.h
  /usr/local/include/Geant4/CLHEP/Vector/ThreeVector.icc
@@ -658,7 +658,7 @@ CMakeFiles/LYSOScint.dir/src/ScintActionInitialization.cc.o
  /usr/local/include/Geant4/windefs.hh
 CMakeFiles/LYSOScint.dir/src/ScintCalorHit.cc.o
  ../include/ScintCalorHit.hh
- /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/src/ScintCalorHit.cc
+ /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintCalorHit.cc
  /usr/local/include/Geant4/CLHEP/Geometry/BasicVector3D.h
  /usr/local/include/Geant4/CLHEP/Geometry/Normal3D.h
  /usr/local/include/Geant4/CLHEP/Geometry/Point3D.h
@@ -718,7 +718,7 @@ CMakeFiles/LYSOScint.dir/src/ScintCalorHit.cc.o
 CMakeFiles/LYSOScint.dir/src/ScintCalorimeterSD.cc.o
  ../include/ScintCalorHit.hh
  ../include/ScintCalorimeterSD.hh
- /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/src/ScintCalorimeterSD.cc
+ /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintCalorimeterSD.cc
  /usr/local/include/Geant4/CLHEP/Geometry/BasicVector3D.h
  /usr/local/include/Geant4/CLHEP/Geometry/Normal3D.h
  /usr/local/include/Geant4/CLHEP/Geometry/Point3D.h
@@ -844,7 +844,7 @@ CMakeFiles/LYSOScint.dir/src/ScintDetectorConstruction.cc.o
  ../include/ScintCalorHit.hh
  ../include/ScintCalorimeterSD.hh
  ../include/ScintDetectorConstruction.hh
- /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/src/ScintDetectorConstruction.cc
+ /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintDetectorConstruction.cc
  /usr/local/include/Geant4/CLHEP/Geometry/BasicVector3D.h
  /usr/local/include/Geant4/CLHEP/Geometry/Normal3D.h
  /usr/local/include/Geant4/CLHEP/Geometry/Point3D.h
@@ -1008,7 +1008,7 @@ CMakeFiles/LYSOScint.dir/src/ScintEventAction.cc.o
  ../include/ScintCalorHit.hh
  ../include/ScintCalorimeterSD.hh
  ../include/ScintEventAction.hh
- /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/src/ScintEventAction.cc
+ /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintEventAction.cc
  /usr/local/include/Geant4/CLHEP/Geometry/BasicVector3D.h
  /usr/local/include/Geant4/CLHEP/Geometry/Normal3D.h
  /usr/local/include/Geant4/CLHEP/Geometry/Point3D.h
@@ -1414,7 +1414,7 @@ CMakeFiles/LYSOScint.dir/src/ScintEventAction.cc.o
  /usr/local/include/Geant4/windefs.hh
 CMakeFiles/LYSOScint.dir/src/ScintPrimaryGeneratorAction.cc.o
  ../include/ScintPrimaryGeneratorAction.hh
- /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/src/ScintPrimaryGeneratorAction.cc
+ /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintPrimaryGeneratorAction.cc
  /usr/local/include/Geant4/CLHEP/Geometry/BasicVector3D.h
  /usr/local/include/Geant4/CLHEP/Geometry/Normal3D.h
  /usr/local/include/Geant4/CLHEP/Geometry/Point3D.h
@@ -1557,7 +1557,7 @@ CMakeFiles/LYSOScint.dir/src/ScintPrimaryGeneratorAction.cc.o
 CMakeFiles/LYSOScint.dir/src/ScintRunAction.cc.o
  ../include/ScintAnalysis.hh
  ../include/ScintRunAction.hh
- /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/src/ScintRunAction.cc
+ /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintRunAction.cc
  /usr/local/include/Geant4/CLHEP/Geometry/BasicVector3D.h
  /usr/local/include/Geant4/CLHEP/Geometry/Normal3D.h
  /usr/local/include/Geant4/CLHEP/Geometry/Point3D.h
@@ -1959,7 +1959,7 @@ CMakeFiles/LYSOScint.dir/src/TrackingAction.cc.o
  ../include/ScintEventAction.hh
  ../include/ScintRunAction.hh
  ../include/TrackingAction.hh
- /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/src/TrackingAction.cc
+ /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/TrackingAction.cc
  /usr/local/include/Geant4/CLHEP/Geometry/BasicVector3D.h
  /usr/local/include/Geant4/CLHEP/Geometry/Normal3D.h
  /usr/local/include/Geant4/CLHEP/Geometry/Point3D.h

@@ -43,10 +43,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling
+CMAKE_SOURCE_DIR = /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/build
+CMAKE_BINARY_DIR = /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/LYSOScint.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/LYSOScint.dir/flags.make
 
 CMakeFiles/LYSOScint.dir/LYSOScint.cc.o: CMakeFiles/LYSOScint.dir/flags.make
 CMakeFiles/LYSOScint.dir/LYSOScint.cc.o: ../LYSOScint.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LYSOScint.dir/LYSOScint.cc.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LYSOScint.dir/LYSOScint.cc.o -c /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/LYSOScint.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LYSOScint.dir/LYSOScint.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LYSOScint.dir/LYSOScint.cc.o -c /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/LYSOScint.cc
 
 CMakeFiles/LYSOScint.dir/LYSOScint.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LYSOScint.dir/LYSOScint.cc.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/LYSOScint.cc > CMakeFiles/LYSOScint.dir/LYSOScint.cc.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/LYSOScint.cc > CMakeFiles/LYSOScint.dir/LYSOScint.cc.i
 
 CMakeFiles/LYSOScint.dir/LYSOScint.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LYSOScint.dir/LYSOScint.cc.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/LYSOScint.cc -o CMakeFiles/LYSOScint.dir/LYSOScint.cc.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/LYSOScint.cc -o CMakeFiles/LYSOScint.dir/LYSOScint.cc.s
 
 CMakeFiles/LYSOScint.dir/LYSOScint.cc.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/LYSOScint.dir/LYSOScint.cc.o.provides.build: CMakeFiles/LYSOScint.dir
 
 CMakeFiles/LYSOScint.dir/src/ScintActionInitialization.cc.o: CMakeFiles/LYSOScint.dir/flags.make
 CMakeFiles/LYSOScint.dir/src/ScintActionInitialization.cc.o: ../src/ScintActionInitialization.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LYSOScint.dir/src/ScintActionInitialization.cc.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LYSOScint.dir/src/ScintActionInitialization.cc.o -c /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/src/ScintActionInitialization.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LYSOScint.dir/src/ScintActionInitialization.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LYSOScint.dir/src/ScintActionInitialization.cc.o -c /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintActionInitialization.cc
 
 CMakeFiles/LYSOScint.dir/src/ScintActionInitialization.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LYSOScint.dir/src/ScintActionInitialization.cc.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/src/ScintActionInitialization.cc > CMakeFiles/LYSOScint.dir/src/ScintActionInitialization.cc.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintActionInitialization.cc > CMakeFiles/LYSOScint.dir/src/ScintActionInitialization.cc.i
 
 CMakeFiles/LYSOScint.dir/src/ScintActionInitialization.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LYSOScint.dir/src/ScintActionInitialization.cc.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/src/ScintActionInitialization.cc -o CMakeFiles/LYSOScint.dir/src/ScintActionInitialization.cc.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintActionInitialization.cc -o CMakeFiles/LYSOScint.dir/src/ScintActionInitialization.cc.s
 
 CMakeFiles/LYSOScint.dir/src/ScintActionInitialization.cc.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/LYSOScint.dir/src/ScintActionInitialization.cc.o.provides.build: CMak
 
 CMakeFiles/LYSOScint.dir/src/ScintCalorHit.cc.o: CMakeFiles/LYSOScint.dir/flags.make
 CMakeFiles/LYSOScint.dir/src/ScintCalorHit.cc.o: ../src/ScintCalorHit.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LYSOScint.dir/src/ScintCalorHit.cc.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LYSOScint.dir/src/ScintCalorHit.cc.o -c /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/src/ScintCalorHit.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LYSOScint.dir/src/ScintCalorHit.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LYSOScint.dir/src/ScintCalorHit.cc.o -c /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintCalorHit.cc
 
 CMakeFiles/LYSOScint.dir/src/ScintCalorHit.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LYSOScint.dir/src/ScintCalorHit.cc.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/src/ScintCalorHit.cc > CMakeFiles/LYSOScint.dir/src/ScintCalorHit.cc.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintCalorHit.cc > CMakeFiles/LYSOScint.dir/src/ScintCalorHit.cc.i
 
 CMakeFiles/LYSOScint.dir/src/ScintCalorHit.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LYSOScint.dir/src/ScintCalorHit.cc.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/src/ScintCalorHit.cc -o CMakeFiles/LYSOScint.dir/src/ScintCalorHit.cc.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintCalorHit.cc -o CMakeFiles/LYSOScint.dir/src/ScintCalorHit.cc.s
 
 CMakeFiles/LYSOScint.dir/src/ScintCalorHit.cc.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/LYSOScint.dir/src/ScintCalorHit.cc.o.provides.build: CMakeFiles/LYSOS
 
 CMakeFiles/LYSOScint.dir/src/ScintCalorimeterSD.cc.o: CMakeFiles/LYSOScint.dir/flags.make
 CMakeFiles/LYSOScint.dir/src/ScintCalorimeterSD.cc.o: ../src/ScintCalorimeterSD.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/LYSOScint.dir/src/ScintCalorimeterSD.cc.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LYSOScint.dir/src/ScintCalorimeterSD.cc.o -c /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/src/ScintCalorimeterSD.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/LYSOScint.dir/src/ScintCalorimeterSD.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LYSOScint.dir/src/ScintCalorimeterSD.cc.o -c /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintCalorimeterSD.cc
 
 CMakeFiles/LYSOScint.dir/src/ScintCalorimeterSD.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LYSOScint.dir/src/ScintCalorimeterSD.cc.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/src/ScintCalorimeterSD.cc > CMakeFiles/LYSOScint.dir/src/ScintCalorimeterSD.cc.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintCalorimeterSD.cc > CMakeFiles/LYSOScint.dir/src/ScintCalorimeterSD.cc.i
 
 CMakeFiles/LYSOScint.dir/src/ScintCalorimeterSD.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LYSOScint.dir/src/ScintCalorimeterSD.cc.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/src/ScintCalorimeterSD.cc -o CMakeFiles/LYSOScint.dir/src/ScintCalorimeterSD.cc.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintCalorimeterSD.cc -o CMakeFiles/LYSOScint.dir/src/ScintCalorimeterSD.cc.s
 
 CMakeFiles/LYSOScint.dir/src/ScintCalorimeterSD.cc.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/LYSOScint.dir/src/ScintCalorimeterSD.cc.o.provides.build: CMakeFiles/
 
 CMakeFiles/LYSOScint.dir/src/ScintDetectorConstruction.cc.o: CMakeFiles/LYSOScint.dir/flags.make
 CMakeFiles/LYSOScint.dir/src/ScintDetectorConstruction.cc.o: ../src/ScintDetectorConstruction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/LYSOScint.dir/src/ScintDetectorConstruction.cc.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LYSOScint.dir/src/ScintDetectorConstruction.cc.o -c /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/src/ScintDetectorConstruction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/LYSOScint.dir/src/ScintDetectorConstruction.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LYSOScint.dir/src/ScintDetectorConstruction.cc.o -c /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintDetectorConstruction.cc
 
 CMakeFiles/LYSOScint.dir/src/ScintDetectorConstruction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LYSOScint.dir/src/ScintDetectorConstruction.cc.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/src/ScintDetectorConstruction.cc > CMakeFiles/LYSOScint.dir/src/ScintDetectorConstruction.cc.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintDetectorConstruction.cc > CMakeFiles/LYSOScint.dir/src/ScintDetectorConstruction.cc.i
 
 CMakeFiles/LYSOScint.dir/src/ScintDetectorConstruction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LYSOScint.dir/src/ScintDetectorConstruction.cc.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/src/ScintDetectorConstruction.cc -o CMakeFiles/LYSOScint.dir/src/ScintDetectorConstruction.cc.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintDetectorConstruction.cc -o CMakeFiles/LYSOScint.dir/src/ScintDetectorConstruction.cc.s
 
 CMakeFiles/LYSOScint.dir/src/ScintDetectorConstruction.cc.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/LYSOScint.dir/src/ScintDetectorConstruction.cc.o.provides.build: CMak
 
 CMakeFiles/LYSOScint.dir/src/ScintEventAction.cc.o: CMakeFiles/LYSOScint.dir/flags.make
 CMakeFiles/LYSOScint.dir/src/ScintEventAction.cc.o: ../src/ScintEventAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/LYSOScint.dir/src/ScintEventAction.cc.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LYSOScint.dir/src/ScintEventAction.cc.o -c /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/src/ScintEventAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/LYSOScint.dir/src/ScintEventAction.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LYSOScint.dir/src/ScintEventAction.cc.o -c /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintEventAction.cc
 
 CMakeFiles/LYSOScint.dir/src/ScintEventAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LYSOScint.dir/src/ScintEventAction.cc.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/src/ScintEventAction.cc > CMakeFiles/LYSOScint.dir/src/ScintEventAction.cc.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintEventAction.cc > CMakeFiles/LYSOScint.dir/src/ScintEventAction.cc.i
 
 CMakeFiles/LYSOScint.dir/src/ScintEventAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LYSOScint.dir/src/ScintEventAction.cc.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/src/ScintEventAction.cc -o CMakeFiles/LYSOScint.dir/src/ScintEventAction.cc.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintEventAction.cc -o CMakeFiles/LYSOScint.dir/src/ScintEventAction.cc.s
 
 CMakeFiles/LYSOScint.dir/src/ScintEventAction.cc.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/LYSOScint.dir/src/ScintEventAction.cc.o.provides.build: CMakeFiles/LY
 
 CMakeFiles/LYSOScint.dir/src/ScintPrimaryGeneratorAction.cc.o: CMakeFiles/LYSOScint.dir/flags.make
 CMakeFiles/LYSOScint.dir/src/ScintPrimaryGeneratorAction.cc.o: ../src/ScintPrimaryGeneratorAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/LYSOScint.dir/src/ScintPrimaryGeneratorAction.cc.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LYSOScint.dir/src/ScintPrimaryGeneratorAction.cc.o -c /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/src/ScintPrimaryGeneratorAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/LYSOScint.dir/src/ScintPrimaryGeneratorAction.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LYSOScint.dir/src/ScintPrimaryGeneratorAction.cc.o -c /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintPrimaryGeneratorAction.cc
 
 CMakeFiles/LYSOScint.dir/src/ScintPrimaryGeneratorAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LYSOScint.dir/src/ScintPrimaryGeneratorAction.cc.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/src/ScintPrimaryGeneratorAction.cc > CMakeFiles/LYSOScint.dir/src/ScintPrimaryGeneratorAction.cc.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintPrimaryGeneratorAction.cc > CMakeFiles/LYSOScint.dir/src/ScintPrimaryGeneratorAction.cc.i
 
 CMakeFiles/LYSOScint.dir/src/ScintPrimaryGeneratorAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LYSOScint.dir/src/ScintPrimaryGeneratorAction.cc.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/src/ScintPrimaryGeneratorAction.cc -o CMakeFiles/LYSOScint.dir/src/ScintPrimaryGeneratorAction.cc.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintPrimaryGeneratorAction.cc -o CMakeFiles/LYSOScint.dir/src/ScintPrimaryGeneratorAction.cc.s
 
 CMakeFiles/LYSOScint.dir/src/ScintPrimaryGeneratorAction.cc.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/LYSOScint.dir/src/ScintPrimaryGeneratorAction.cc.o.provides.build: CM
 
 CMakeFiles/LYSOScint.dir/src/ScintRunAction.cc.o: CMakeFiles/LYSOScint.dir/flags.make
 CMakeFiles/LYSOScint.dir/src/ScintRunAction.cc.o: ../src/ScintRunAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/LYSOScint.dir/src/ScintRunAction.cc.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LYSOScint.dir/src/ScintRunAction.cc.o -c /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/src/ScintRunAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/LYSOScint.dir/src/ScintRunAction.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LYSOScint.dir/src/ScintRunAction.cc.o -c /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintRunAction.cc
 
 CMakeFiles/LYSOScint.dir/src/ScintRunAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LYSOScint.dir/src/ScintRunAction.cc.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/src/ScintRunAction.cc > CMakeFiles/LYSOScint.dir/src/ScintRunAction.cc.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintRunAction.cc > CMakeFiles/LYSOScint.dir/src/ScintRunAction.cc.i
 
 CMakeFiles/LYSOScint.dir/src/ScintRunAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LYSOScint.dir/src/ScintRunAction.cc.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/src/ScintRunAction.cc -o CMakeFiles/LYSOScint.dir/src/ScintRunAction.cc.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintRunAction.cc -o CMakeFiles/LYSOScint.dir/src/ScintRunAction.cc.s
 
 CMakeFiles/LYSOScint.dir/src/ScintRunAction.cc.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/LYSOScint.dir/src/ScintRunAction.cc.o.provides.build: CMakeFiles/LYSO
 
 CMakeFiles/LYSOScint.dir/src/TrackingAction.cc.o: CMakeFiles/LYSOScint.dir/flags.make
 CMakeFiles/LYSOScint.dir/src/TrackingAction.cc.o: ../src/TrackingAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/LYSOScint.dir/src/TrackingAction.cc.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LYSOScint.dir/src/TrackingAction.cc.o -c /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/src/TrackingAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/LYSOScint.dir/src/TrackingAction.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LYSOScint.dir/src/TrackingAction.cc.o -c /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/TrackingAction.cc
 
 CMakeFiles/LYSOScint.dir/src/TrackingAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LYSOScint.dir/src/TrackingAction.cc.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/src/TrackingAction.cc > CMakeFiles/LYSOScint.dir/src/TrackingAction.cc.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/TrackingAction.cc > CMakeFiles/LYSOScint.dir/src/TrackingAction.cc.i
 
 CMakeFiles/LYSOScint.dir/src/TrackingAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LYSOScint.dir/src/TrackingAction.cc.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/src/TrackingAction.cc -o CMakeFiles/LYSOScint.dir/src/TrackingAction.cc.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/TrackingAction.cc -o CMakeFiles/LYSOScint.dir/src/TrackingAction.cc.s
 
 CMakeFiles/LYSOScint.dir/src/TrackingAction.cc.o.requires:
 
@@ -345,7 +345,7 @@ LYSOScint: /usr/local/lib/libG4intercoms.dylib
 LYSOScint: /usr/local/lib/libG4global.dylib
 LYSOScint: /usr/local/lib/libG4clhep.dylib
 LYSOScint: CMakeFiles/LYSOScint.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable LYSOScint"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable LYSOScint"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LYSOScint.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -370,6 +370,6 @@ CMakeFiles/LYSOScint.dir/clean:
 .PHONY : CMakeFiles/LYSOScint.dir/clean
 
 CMakeFiles/LYSOScint.dir/depend:
-	cd /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/build /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/build /Users/Luc/Documents/Research/Geant4_Studies/Geant4Sim/Geant4Sim/SourceCode/LYSOScintModeling/build/CMakeFiles/LYSOScint.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00 /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00 /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/build /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/build /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/build/CMakeFiles/LYSOScint.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/LYSOScint.dir/depend
 

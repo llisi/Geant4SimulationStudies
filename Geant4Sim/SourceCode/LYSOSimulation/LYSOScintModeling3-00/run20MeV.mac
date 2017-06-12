@@ -18,18 +18,19 @@
 
 /gps/pos/type Beam
 
-/gps/pos/centre -7 0. 0. cm
-/gps/pos/rot1 0 1 0
-/gps/pos/rot2 0 0 1
+/gps/pos/centre 0. 0. 10. cm
+/gps/pos/rot1 1 0 0
+/gps/pos/rot2 0 1 0
+
 
 /gps/pos/halfy 0 cm
-/gps/pos/sigma_y 0.1 cm
+/gps/pos/sigma_r 0.1 cm
 
-/gps/direction 1 0 0
+/gps/direction 0 0 -1
 
 /gps/ene/type Mono
 /gps/ene/mono 20 MeV
 #
-/run/beamOn 100000
+/run/beamOn 10
 # 
 
