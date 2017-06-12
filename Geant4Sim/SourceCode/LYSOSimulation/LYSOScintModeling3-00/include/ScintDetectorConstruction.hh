@@ -62,6 +62,15 @@ class ScintDetectorConstruction : public G4VUserDetectorConstruction
   public:
     virtual G4VPhysicalVolume* Construct();
     virtual void ConstructSDandField();
+
+    //methods
+
+    G4double GetPixelHeight() const;
+    G4double GetPixelWidth() const;
+    G4double GetInnerReflectorThickness() const;
+    G4double GetPixelNoX() const;
+    G4double GetPixelNoZ() const;
+    G4double GetOuterReflectorThickness() const;
      
   private:
     // methods
@@ -76,7 +85,38 @@ class ScintDetectorConstruction : public G4VUserDetectorConstruction
 
     G4bool  fCheckOverlaps; // option to activate checking of volumes overlaps
     G4int   fNofLayers;     // number of layers
+    G4double nPixels_X;
+    G4double nPixels_Z;
+    G4double pixelHeight;
+    G4double pixel_XZ;
+    G4double InnerReflectorThickness;
+    G4double OuterReflectorThickness;
 };
+
+
+inline G4double ScintDetectorConstruction::GetPixelHeight() const { 
+  return pixelHeight; 
+}
+
+inline G4double ScintDetectorConstruction::GetPixelWidth() const{
+  return pixel_XZ;
+}
+
+inline G4double ScintDetectorConstruction::GetInnerReflectorThickness() const{
+  return InnerReflectorThickness;
+}
+
+inline G4double ScintDetectorConstruction::GetPixelNoX() const{
+  return nPixels_X;
+}
+
+inline G4double ScintDetectorConstruction::GetPixelNoZ() const{
+  return nPixels_Z;
+}
+
+inline G4double ScintDetectorConstruction::GetOuterReflectorThickness() const{
+  return OuterReflectorThickness;
+}
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 

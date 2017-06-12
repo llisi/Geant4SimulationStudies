@@ -110,6 +110,13 @@ ScintRunAction::ScintRunAction()
   analysisManager->CreateNtupleDColumn("PrimaryParticleDirPhi");     //column 6
   analysisManager->CreateNtupleDColumn("PrimaryParticleWeight");     //column 7
 
+  analysisManager->CreateNtuple("RunInfo", "Run Parameters");
+  analysisManager->CreateNtupleDColumn("nPixels_Z");  // 0
+  analysisManager->CreateNtupleDColumn("nPixels_X");  // 1
+  analysisManager->CreateNtupleDColumn("PixelHeight"); // 2
+  analysisManager->CreateNtupleDColumn("PixelWidth"); //3
+  analysisManager->CreateNtupleDColumn("InnerReflectorThickness"); //4
+  analysisManager->CreateNtupleDColumn("OuterReflectorThickness"); //5
 
   // Use this is you are intrested in tracking ALL particles. 
   // ~~ WARNING, THIS USES A LOT OF MEMORY ~~
@@ -151,6 +158,7 @@ void ScintRunAction::BeginOfRunAction(const G4Run* /*run*/)
   //
   G4String fileName = "MonoEnergeticPhotons";
   analysisManager->OpenFile(fileName);
+
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

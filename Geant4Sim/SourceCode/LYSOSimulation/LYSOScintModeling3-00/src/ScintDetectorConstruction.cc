@@ -26,7 +26,15 @@ G4GlobalMagFieldMessenger* ScintDetectorConstruction::fMagFieldMessenger = 0;
 ScintDetectorConstruction::ScintDetectorConstruction()
  : G4VUserDetectorConstruction(),
    fCheckOverlaps(false),
-   fNofLayers(-1)
+   fNofLayers(-1),
+
+   //default scint values
+   nPixels_X(50),
+   nPixels_Z(60),
+   pixelHeight(12*mm),
+   pixel_XZ(1.2*mm),
+   InnerReflectorThickness(0.1*mm),
+   OuterReflectorThickness(0.5*mm)
 {
 }
 
@@ -101,28 +109,35 @@ G4VPhysicalVolume* ScintDetectorConstruction::DefineVolumes()
 
   // z by x pixel grid. Laser direction in Z
 
-  G4double nPixels_Z = 11;
-  G4double nPixels_X = 7;
+  //EDIT THESE VALUES ONLY!!!!!!!!!
+
+  //-----------------------------------------------------------
+
+  nPixels_Z = 60;
+  nPixels_X = 50;
+
+  pixel_XZ = 1.2*mm;
+  pixelHeight= 12*mm;
+
+  InnerReflectorThickness = 0.1*mm;
+  OuterReflectorThickness = 0.5*mm; // Bottom is same as sides
+
+  //-----------------------------------------------------------
+
 
   fNofLayers = nPixels_X*nPixels_Z;
-  G4double pixel_XZ = 1.2*mm;
-  G4double pixelHeight= 12*mm;
 
   G4double pixelPos_X;
   G4double pixelPos_Y = 0.*mm;     // y is vertial. We do not translate pixels vertially so we center on 0
   G4double pixelPos_Z;
 
-
   //Inner Reflector Material Dimensions
 
-  G4double InnerReflectorThickness = 0.1*mm;
   G4double InnerReflectorHeight = pixelHeight;
 
 
   //Outside reflector dimensions (seperated into Front/Back, Left/Right, and Bottom parts)
 
-  G4double OuterReflectorThickness = 0.5*mm; // Bottom is same as sides
-  G4double OuterReflectorHeight_Sides = pixelHeight;
 
 
   // Calculate total scintillator dimensions
@@ -135,9 +150,6 @@ G4VPhysicalVolume* ScintDetectorConstruction::DefineVolumes()
   G4double FBOuterReflectorLength = TotalSize_X;
   G4double LROuterReflectorLength = TotalSize_Z - 2*OuterReflectorThickness;  // to avoid overlap
 
-
-  G4double BottomReflector_X = TotalSize_X;
-  G4double BottomReflector_Z = TotalSize_Z;
 
 
   G4double ReflectorPos_X;
@@ -387,6 +399,8 @@ new G4PVPlacement(0,
                   0,
                   fCheckOverlaps);
   
+
+  worldLV->SetVisAttributes (G4VisAttributes::GetInvisible());
 
   //
   // Always return the physical World
