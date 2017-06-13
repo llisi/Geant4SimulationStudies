@@ -44,11 +44,13 @@
 #include "G4Track.hh"
 #include "G4SystemOfUnits.hh"
 #include "G4PhysicalConstants.hh"
+#include "ScintDetectorConstruction.hh"
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo....
 
-TrackingAction::TrackingAction()
-:G4UserTrackingAction()
+TrackingAction::TrackingAction(const ScintDetectorConstruction* detectorConstruction)
+:G4UserTrackingAction(),
+fDetConstruction(detectorConstruction)
 { }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo....
@@ -61,24 +63,18 @@ void TrackingAction::PreUserTrackingAction(const G4Track* track)
   G4double ekin           = track->GetKineticEnergy();
   G4ThreeVector vertex    = track->GetPosition();
   G4ThreeVector direction = track->GetMomentumDirection();
-  G4double weight         = track->GetWeight();
   
   auto analysisManager = G4AnalysisManager::Instance();
   
   //Primary Particles
   if (time == 0){
   G4double x = vertex.x(), y = vertex.y(), z = vertex.z();
-  G4double theta = direction.theta(), phi = direction.phi();
-  if (phi < 0.) phi += twopi;
 
   // fill histograms    
-  analysisManager->FillH1(4,ekin); 
-  analysisManager->FillH1(5,theta);  
-  analysisManager->FillH1(6,phi);    
+  analysisManager->FillH1(4,ekin);    
   analysisManager->FillH2(2,x,y);
   analysisManager->FillH2(3,z,y);
   analysisManager->FillH2(4,z,x);      
-  analysisManager->FillH2(5,phi,theta);
   
   // fill ntuple  
   analysisManager->FillNtupleIColumn(3,0,pid);
@@ -86,11 +82,18 @@ void TrackingAction::PreUserTrackingAction(const G4Track* track)
   analysisManager->FillNtupleDColumn(3,2,x);
   analysisManager->FillNtupleDColumn(3,3,y);
   analysisManager->FillNtupleDColumn(3,4,z); 
-  analysisManager->FillNtupleDColumn(3,5,theta);
-  analysisManager->FillNtupleDColumn(3,6,phi); 
-  analysisManager->FillNtupleDColumn(3,7,weight);
 
   analysisManager->AddNtupleRow(3);
+
+  analysisManager->FillNtupleDColumn(4,0,fDetConstruction->GetPixelHeight());
+
+  analysisManager->FillNtupleDColumn(4,0,fDetConstruction->GetPixelNoZ());
+  analysisManager->FillNtupleDColumn(4,1,fDetConstruction->GetPixelNoX());
+  analysisManager->FillNtupleDColumn(4,2,fDetConstruction->GetPixelHeight());
+  analysisManager->FillNtupleDColumn(4,3,fDetConstruction->GetPixelWidth());
+  analysisManager->FillNtupleDColumn(4,4,fDetConstruction->GetInnerReflectorThickness());
+  analysisManager->FillNtupleDColumn(4,5,fDetConstruction->GetOuterReflectorThickness());
+
 }
   // Use this is you are intrested in tracking ALL particles. 
   // ~~ WARNING, THIS USES A LOT OF MEMORY ~~

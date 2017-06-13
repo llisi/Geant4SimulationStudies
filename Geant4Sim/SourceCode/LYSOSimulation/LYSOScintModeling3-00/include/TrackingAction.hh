@@ -37,16 +37,22 @@
 
 #include "G4UserTrackingAction.hh"
 #include "globals.hh"
+#include "ScintDetectorConstruction.hh"
+
+class ScintDetectorConstruction;
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 class TrackingAction : public G4UserTrackingAction
 {
   public:
-    TrackingAction() ;
+    TrackingAction(const ScintDetectorConstruction* detectorConstruction) ;
    ~TrackingAction() { };
     
     virtual void  PreUserTrackingAction(const G4Track*);
+
+  private:
+  	const ScintDetectorConstruction* fDetConstruction;
 };
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

@@ -249,9 +249,33 @@ CMakeFiles/LYSOScint.dir/src/ScintRunAction.cc.o.provides: CMakeFiles/LYSOScint.
 CMakeFiles/LYSOScint.dir/src/ScintRunAction.cc.o.provides.build: CMakeFiles/LYSOScint.dir/src/ScintRunAction.cc.o
 
 
+CMakeFiles/LYSOScint.dir/src/SteppingAction.cc.o: CMakeFiles/LYSOScint.dir/flags.make
+CMakeFiles/LYSOScint.dir/src/SteppingAction.cc.o: ../src/SteppingAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/LYSOScint.dir/src/SteppingAction.cc.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LYSOScint.dir/src/SteppingAction.cc.o -c /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/SteppingAction.cc
+
+CMakeFiles/LYSOScint.dir/src/SteppingAction.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LYSOScint.dir/src/SteppingAction.cc.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/SteppingAction.cc > CMakeFiles/LYSOScint.dir/src/SteppingAction.cc.i
+
+CMakeFiles/LYSOScint.dir/src/SteppingAction.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LYSOScint.dir/src/SteppingAction.cc.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/SteppingAction.cc -o CMakeFiles/LYSOScint.dir/src/SteppingAction.cc.s
+
+CMakeFiles/LYSOScint.dir/src/SteppingAction.cc.o.requires:
+
+.PHONY : CMakeFiles/LYSOScint.dir/src/SteppingAction.cc.o.requires
+
+CMakeFiles/LYSOScint.dir/src/SteppingAction.cc.o.provides: CMakeFiles/LYSOScint.dir/src/SteppingAction.cc.o.requires
+	$(MAKE) -f CMakeFiles/LYSOScint.dir/build.make CMakeFiles/LYSOScint.dir/src/SteppingAction.cc.o.provides.build
+.PHONY : CMakeFiles/LYSOScint.dir/src/SteppingAction.cc.o.provides
+
+CMakeFiles/LYSOScint.dir/src/SteppingAction.cc.o.provides.build: CMakeFiles/LYSOScint.dir/src/SteppingAction.cc.o
+
+
 CMakeFiles/LYSOScint.dir/src/TrackingAction.cc.o: CMakeFiles/LYSOScint.dir/flags.make
 CMakeFiles/LYSOScint.dir/src/TrackingAction.cc.o: ../src/TrackingAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/LYSOScint.dir/src/TrackingAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/LYSOScint.dir/src/TrackingAction.cc.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LYSOScint.dir/src/TrackingAction.cc.o -c /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/TrackingAction.cc
 
 CMakeFiles/LYSOScint.dir/src/TrackingAction.cc.i: cmake_force
@@ -283,6 +307,7 @@ LYSOScint_OBJECTS = \
 "CMakeFiles/LYSOScint.dir/src/ScintEventAction.cc.o" \
 "CMakeFiles/LYSOScint.dir/src/ScintPrimaryGeneratorAction.cc.o" \
 "CMakeFiles/LYSOScint.dir/src/ScintRunAction.cc.o" \
+"CMakeFiles/LYSOScint.dir/src/SteppingAction.cc.o" \
 "CMakeFiles/LYSOScint.dir/src/TrackingAction.cc.o"
 
 # External object files for target LYSOScint
@@ -296,6 +321,7 @@ LYSOScint: CMakeFiles/LYSOScint.dir/src/ScintDetectorConstruction.cc.o
 LYSOScint: CMakeFiles/LYSOScint.dir/src/ScintEventAction.cc.o
 LYSOScint: CMakeFiles/LYSOScint.dir/src/ScintPrimaryGeneratorAction.cc.o
 LYSOScint: CMakeFiles/LYSOScint.dir/src/ScintRunAction.cc.o
+LYSOScint: CMakeFiles/LYSOScint.dir/src/SteppingAction.cc.o
 LYSOScint: CMakeFiles/LYSOScint.dir/src/TrackingAction.cc.o
 LYSOScint: CMakeFiles/LYSOScint.dir/build.make
 LYSOScint: /usr/local/lib/libG4Tree.dylib
@@ -345,7 +371,7 @@ LYSOScint: /usr/local/lib/libG4intercoms.dylib
 LYSOScint: /usr/local/lib/libG4global.dylib
 LYSOScint: /usr/local/lib/libG4clhep.dylib
 LYSOScint: CMakeFiles/LYSOScint.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable LYSOScint"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable LYSOScint"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LYSOScint.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -361,6 +387,7 @@ CMakeFiles/LYSOScint.dir/requires: CMakeFiles/LYSOScint.dir/src/ScintDetectorCon
 CMakeFiles/LYSOScint.dir/requires: CMakeFiles/LYSOScint.dir/src/ScintEventAction.cc.o.requires
 CMakeFiles/LYSOScint.dir/requires: CMakeFiles/LYSOScint.dir/src/ScintPrimaryGeneratorAction.cc.o.requires
 CMakeFiles/LYSOScint.dir/requires: CMakeFiles/LYSOScint.dir/src/ScintRunAction.cc.o.requires
+CMakeFiles/LYSOScint.dir/requires: CMakeFiles/LYSOScint.dir/src/SteppingAction.cc.o.requires
 CMakeFiles/LYSOScint.dir/requires: CMakeFiles/LYSOScint.dir/src/TrackingAction.cc.o.requires
 
 .PHONY : CMakeFiles/LYSOScint.dir/requires

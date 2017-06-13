@@ -17,7 +17,7 @@
 
 #include "G4PhysicalConstants.hh"
 #include "G4SystemOfUnits.hh"
-
+#include "ScintAnalysis.hh"
 #include "ScintCalorimeterSD.hh"
 
 G4ThreadLocal 
@@ -116,14 +116,13 @@ G4VPhysicalVolume* ScintDetectorConstruction::DefineVolumes()
   nPixels_Z = 60;
   nPixels_X = 50;
 
-  pixel_XZ = 1.2*mm;
   pixelHeight= 12*mm;
+  pixel_XZ = 1.2*mm;
 
   InnerReflectorThickness = 0.1*mm;
   OuterReflectorThickness = 0.5*mm; // Bottom is same as sides
 
   //-----------------------------------------------------------
-
 
   fNofLayers = nPixels_X*nPixels_Z;
 

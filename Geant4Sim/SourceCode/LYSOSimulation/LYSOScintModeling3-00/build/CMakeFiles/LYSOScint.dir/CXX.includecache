@@ -58,11 +58,17 @@ G4UserRunAction.hh
 globals.hh
 ../include/globals.hh
 
+../include/SteppingAction.hh
+G4UserSteppingAction.hh
+../include/G4UserSteppingAction.hh
+
 ../include/TrackingAction.hh
 G4UserTrackingAction.hh
 ../include/G4UserTrackingAction.hh
 globals.hh
 ../include/globals.hh
+ScintDetectorConstruction.hh
+../include/ScintDetectorConstruction.hh
 
 /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/LYSOScint.cc
 G4VisExecutive.hh
@@ -101,6 +107,10 @@ ScintEventAction.hh
 /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintEventAction.hh
 TrackingAction.hh
 /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/TrackingAction.hh
+ScintDetectorConstruction.hh
+/Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintDetectorConstruction.hh
+SteppingAction.hh
+/Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/SteppingAction.hh
 
 /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintCalorHit.cc
 ScintCalorHit.hh
@@ -161,6 +171,8 @@ G4PhysicalConstants.hh
 /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/G4PhysicalConstants.hh
 G4SystemOfUnits.hh
 /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/G4SystemOfUnits.hh
+ScintAnalysis.hh
+/Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintAnalysis.hh
 ScintCalorimeterSD.hh
 /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintCalorimeterSD.hh
 
@@ -216,6 +228,30 @@ G4UnitsTable.hh
 G4SystemOfUnits.hh
 /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/G4SystemOfUnits.hh
 
+/Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/SteppingAction.cc
+SteppingAction.hh
+/Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/SteppingAction.hh
+ScintEventAction.hh
+/Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintEventAction.hh
+ScintRunAction.hh
+/Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintRunAction.hh
+ScintAnalysis.hh
+/Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintAnalysis.hh
+ScintDetectorConstruction.hh
+/Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintDetectorConstruction.hh
+G4RunManager.hh
+/Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/G4RunManager.hh
+G4Event.hh
+/Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/G4Event.hh
+G4SDManager.hh
+/Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/G4SDManager.hh
+G4Track.hh
+/Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/G4Track.hh
+G4Step.hh
+/Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/G4Step.hh
+G4RunManager.hh
+/Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/G4RunManager.hh
+
 /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/TrackingAction.cc
 TrackingAction.hh
 /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/TrackingAction.hh
@@ -241,6 +277,8 @@ G4SystemOfUnits.hh
 /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/G4SystemOfUnits.hh
 G4PhysicalConstants.hh
 /Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/G4PhysicalConstants.hh
+ScintDetectorConstruction.hh
+/Users/Luc/Documents/Research/Geant4SimulationStudies/Geant4Souce/Geant4Sim/SourceCode/LYSOSimulation/LYSOScintModeling3-00/src/ScintDetectorConstruction.hh
 
 /usr/local/include/Geant4/CLHEP/Geometry/BasicVector3D.h
 iosfwd

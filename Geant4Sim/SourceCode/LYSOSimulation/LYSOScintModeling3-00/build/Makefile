@@ -383,6 +383,33 @@ src/ScintRunAction.cc.s:
 	$(MAKE) -f CMakeFiles/LYSOScint.dir/build.make CMakeFiles/LYSOScint.dir/src/ScintRunAction.cc.s
 .PHONY : src/ScintRunAction.cc.s
 
+src/SteppingAction.o: src/SteppingAction.cc.o
+
+.PHONY : src/SteppingAction.o
+
+# target to build an object file
+src/SteppingAction.cc.o:
+	$(MAKE) -f CMakeFiles/LYSOScint.dir/build.make CMakeFiles/LYSOScint.dir/src/SteppingAction.cc.o
+.PHONY : src/SteppingAction.cc.o
+
+src/SteppingAction.i: src/SteppingAction.cc.i
+
+.PHONY : src/SteppingAction.i
+
+# target to preprocess a source file
+src/SteppingAction.cc.i:
+	$(MAKE) -f CMakeFiles/LYSOScint.dir/build.make CMakeFiles/LYSOScint.dir/src/SteppingAction.cc.i
+.PHONY : src/SteppingAction.cc.i
+
+src/SteppingAction.s: src/SteppingAction.cc.s
+
+.PHONY : src/SteppingAction.s
+
+# target to generate assembly for a file
+src/SteppingAction.cc.s:
+	$(MAKE) -f CMakeFiles/LYSOScint.dir/build.make CMakeFiles/LYSOScint.dir/src/SteppingAction.cc.s
+.PHONY : src/SteppingAction.cc.s
+
 src/TrackingAction.o: src/TrackingAction.cc.o
 
 .PHONY : src/TrackingAction.o
@@ -447,6 +474,9 @@ help:
 	@echo "... src/ScintRunAction.o"
 	@echo "... src/ScintRunAction.i"
 	@echo "... src/ScintRunAction.s"
+	@echo "... src/SteppingAction.o"
+	@echo "... src/SteppingAction.i"
+	@echo "... src/SteppingAction.s"
 	@echo "... src/TrackingAction.o"
 	@echo "... src/TrackingAction.i"
 	@echo "... src/TrackingAction.s"

@@ -40,8 +40,11 @@ int main(int argc,char** argv)
 
 
 // set mandatory user action class
-  runManager->SetUserInitialization(new ScintActionInitialization);
+  auto detConstruction = new ScintDetectorConstruction();
+  runManager->SetUserInitialization(detConstruction);
 
+  auto actionInitialization = new ScintActionInitialization(detConstruction);
+  runManager->SetUserInitialization(actionInitialization);
 
 // Instantiation and initialization of the Visualization Manager
 // visualization manager

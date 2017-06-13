@@ -116,14 +116,18 @@ void ScintEventAction::EndOfEventAction(const G4Event* event)
   //
 
   // get analysis manager
+
   auto analysisManager = G4AnalysisManager::Instance();
   analysisManager->FillNtupleIColumn(1,3,eventID);
+
   // fill histograms
   //Only fill if energy was deposited
   if (absoHit->GetEdep() != 0){
+
   analysisManager->FillH1(analysisManager->GetH1Id("HitBool",true), 0.9);
   analysisManager->FillH1(analysisManager->GetH1Id("Eabs",true), absoHit->GetEdep());
   analysisManager->FillNtupleIColumn(1,2,1);
+
   }
 
   else if (absoHit->GetEdep() == 0){
@@ -142,16 +146,19 @@ void ScintEventAction::EndOfEventAction(const G4Event* event)
   auto EdepId = analysisManager->GetH2Id("Edep",true);
   auto HitCountId = analysisManager->GetH2Id("HitCount",true);
   auto EdepXId = analysisManager->GetH1Id("EdepX",true);
+  auto EdepZId = analysisManager->GetH1Id("EdepZ",true);
 
   G4double perCentEdep;
 
   // Only fill if there is at least some energy deposited in Calo
 
   if (absoHit->GetEdep() != 0.){
+
   for(G4int i=0;i<absoHC->entries()-1;i++){
 
       //G4cout << (*absoHC)[i]->GetEdep()<< " " << absoHit->GetEdep() << " " << perCentEdep << G4endl;
       if((*absoHC)[i]->GetEdep() != 0.){
+
         analysisManager->FillNtupleDColumn(2,0, (*absoHC)[i]->GetEdep());
         analysisManager->FillNtupleDColumn(2,1, (*absoHC)[i]->GetTrackPos().x());
         analysisManager->FillNtupleDColumn(2,2, (*absoHC)[i]->GetTrackPos().y());
@@ -163,8 +170,10 @@ void ScintEventAction::EndOfEventAction(const G4Event* event)
 
         analysisManager->AddNtupleRow(2);
         analysisManager->FillH1(EdepXId, (*absoHC)[i]->GetTrackPos().x(),(*absoHC)[i]->GetEdep());
-        analysisManager->FillH2(EdepId, (*absoHC)[i]->GetTrackPos().x(),(*absoHC)[i]->GetTrackPos().z(),(*absoHC)[i]->GetEdep());
-        analysisManager->FillH2(HitCountId, (*absoHC)[i]->GetTrackPos().x(),(*absoHC)[i]->GetTrackPos().z()); 
+        analysisManager->FillH1(EdepZId, (*absoHC)[i]->GetTrackPos().z() + 39,(*absoHC)[i]->GetEdep());
+        analysisManager->FillH2(EdepId, (*absoHC)[i]->GetTrackPos().z(),(*absoHC)[i]->GetTrackPos().x(),(*absoHC)[i]->GetEdep());
+        analysisManager->FillH2(HitCountId, (*absoHC)[i]->GetTrackPos().z(),(*absoHC)[i]->GetTrackPos().x()); 
+      
       }
    }
  }

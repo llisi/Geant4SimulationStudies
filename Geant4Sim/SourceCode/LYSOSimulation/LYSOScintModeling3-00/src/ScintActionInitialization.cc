@@ -33,12 +33,15 @@
 #include "ScintRunAction.hh"
 #include "ScintEventAction.hh"
 #include "TrackingAction.hh"
+#include "ScintDetectorConstruction.hh"
+#include "SteppingAction.hh"
 
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-ScintActionInitialization::ScintActionInitialization()
- : G4VUserActionInitialization()
+ScintActionInitialization::ScintActionInitialization(ScintDetectorConstruction* detConstruction)
+ : G4VUserActionInitialization(),
+ fDetConstruction(detConstruction)
 {}
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -59,8 +62,9 @@ void ScintActionInitialization::Build() const
 {
   SetUserAction(new ScintPrimaryGeneratorAction);
   SetUserAction(new ScintRunAction);
-  SetUserAction(new TrackingAction);
+  SetUserAction(new TrackingAction(fDetConstruction));
   SetUserAction(new ScintEventAction);
+  SetUserAction(new SteppingAction);
 }  
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

@@ -42,7 +42,7 @@ ScintRunAction::ScintRunAction()
  : G4UserRunAction()
 { 
   // set printing event number per each event
-  G4RunManager::GetRunManager()->SetPrintProgress(1);     
+  G4RunManager::GetRunManager()->SetPrintProgress(10000);     
   // Create analysis manager
   // The choice of analysis technology is done via selectin of a namespace
   // in ScintAnalysis.hh
@@ -63,60 +63,66 @@ ScintRunAction::ScintRunAction()
 
   analysisManager->CreateH1("Eabs","Total Edep in LYSO", 200, 0., 100*MeV);      // 0      
   analysisManager->CreateH1("Labs","trackL in LYSO", 100, 0., 20*cm);            // 1
-  analysisManager->CreateH1("EdepX","Edep in X", 60,-39.,39.);                   // 2
+  analysisManager->CreateH1("EdepX","Total Energy Deposited in X (Vertical)", 50,-32.5,32.5);                   // 2
+  analysisManager->CreateH1("EdepZ","Total Energy Deposited in Z (Horizontal)", 60,0.,78.);                   // 2
   analysisManager->CreateH1("HitBool","Hit Bool", 3,-1.,1.);                     // 3
 
-  analysisManager->CreateH1("ParKN","kinetic energy", 200, 0, 110);              // 4
-  analysisManager->CreateH1("ParDir1","direction: theta", 200, -3.2, 3.2);       // 5
-  analysisManager->CreateH1("ParDir2","direction: phi", 200, -3.2, 3.2);         // 6
+  analysisManager->CreateH1("PartKinE","kinetic energy", 200, 0, 110);              // 4
 
-  analysisManager->CreateH2("Edep","Edep in pixels", 60 ,-39., 39., 
-                                                    50, -33.15, 31.85);    // 0
+  analysisManager->CreateH2("Edep","Edep in pixels", 60 ,-39, 39, 
+                                                    50, -32.5, 32.5);    // 0
   
   analysisManager->CreateH2("HitCount","Hitcount", 60 ,-39., 39., 
-                                                    50, -33.15, 31.85);    // 1
+                                                    50, -32.5, 32.5);    // 1
 
-  analysisManager->CreateH2("ParXY","vertex: XY",200,-40,40, 200, -40,40); // 2
-  analysisManager->CreateH2("ParYZ","vertex: ZY",200,-40,40, 200, -40,40); // 3
-  analysisManager->CreateH2("ParZX","vertex: ZX",200,-40,40, 200, -40,40); // 4
-  analysisManager->CreateH2("Par2dDir1","direction: phi-theta",
-                                                200, -3.2, 3.2, 200, -3.2, 3.2); // 5
+  analysisManager->CreateH2("ParXY","vertex: XY 0.25[mm] bin",800,-100,100, 800, -100,100); // 2
+  analysisManager->CreateH2("ParYZ","vertex: ZY 0.25[mm] bin",800,-100,100, 800, -100,100); // 3
+  analysisManager->CreateH2("ParZX","vertex: ZX 0.25[mm] bin",800,-100,100, 800, -100,100); // 4
 
-
+  /*
+  analysisManager->CreateH2("EdepTest","Edep in pixels - Test", 60 ,-39, 39, 
+                                                    50, -32.5, 32.5);    // 5
+  */
 
   // Creating ntuple
   analysisManager->SetFirstNtupleId(1);
 
-  analysisManager->CreateNtuple("Totals", "Edep and TrackL");
+  analysisManager->CreateNtuple("Totals", "Edep and TrackL"); // 1
   analysisManager->CreateNtupleDColumn("Eabs");           //column 0         
   analysisManager->CreateNtupleDColumn("Labs");           //column 1
   analysisManager->CreateNtupleIColumn("HitBool");        //column 2
   analysisManager->CreateNtupleIColumn("EventNo");        //column 3
 
-  analysisManager->CreateNtuple("PixelHits", "Edep and Position in Pixels");
+  analysisManager->CreateNtuple("PixelHits", "Edep and Position in Pixels"); // 2  
   analysisManager->CreateNtupleDColumn("Edep");           //column 0
   analysisManager->CreateNtupleDColumn("xPos");           //column 1
   analysisManager->CreateNtupleDColumn("yPos");           //column 2
   analysisManager->CreateNtupleDColumn("zPos");           //column 3
   analysisManager->CreateNtupleDColumn("EdepPerCent");    //column 4
 
-  analysisManager->CreateNtuple("PrimaryPartInfo", "Position and Energy Distribution");
+  analysisManager->CreateNtuple("PrimaryPartInfo", "Position and Energy Distribution"); // 3
   analysisManager->CreateNtupleIColumn("PrimaryParticleID");         //column 0
   analysisManager->CreateNtupleDColumn("PrimaryParticleEkin");       //column 1
   analysisManager->CreateNtupleDColumn("PrimaryParticlePosX");       //column 2
   analysisManager->CreateNtupleDColumn("PrimaryParticlePosY");       //column 3
   analysisManager->CreateNtupleDColumn("PrimaryParticlePosZ");       //column 4
-  analysisManager->CreateNtupleDColumn("PrimaryParticleDirTheta");   //column 5
-  analysisManager->CreateNtupleDColumn("PrimaryParticleDirPhi");     //column 6
-  analysisManager->CreateNtupleDColumn("PrimaryParticleWeight");     //column 7
 
-  analysisManager->CreateNtuple("RunInfo", "Run Parameters");
+  analysisManager->CreateNtuple("RunInfo", "Run Parameters"); // 4 
   analysisManager->CreateNtupleDColumn("nPixels_Z");  // 0
   analysisManager->CreateNtupleDColumn("nPixels_X");  // 1
   analysisManager->CreateNtupleDColumn("PixelHeight"); // 2
   analysisManager->CreateNtupleDColumn("PixelWidth"); //3
   analysisManager->CreateNtupleDColumn("InnerReflectorThickness"); //4
   analysisManager->CreateNtupleDColumn("OuterReflectorThickness"); //5
+
+  /*
+  analysisManager->CreateNtuple("PixelHit_M", "PixelHit Manually added"); // 5
+  analysisManager->CreateNtupleDColumn("Edep");           //column 0
+  analysisManager->CreateNtupleDColumn("xPos");           //column 1
+  analysisManager->CreateNtupleDColumn("yPos");           //column 2
+  analysisManager->CreateNtupleDColumn("zPos");           //column 3
+  analysisManager->CreateNtupleDColumn("EdepPerCent");    //column 4
+  */
 
   // Use this is you are intrested in tracking ALL particles. 
   // ~~ WARNING, THIS USES A LOT OF MEMORY ~~
@@ -168,6 +174,8 @@ void ScintRunAction::EndOfRunAction(const G4Run* /*run*/)
   // print histogram statistics
   //
   auto analysisManager = G4AnalysisManager::Instance();
+
+  analysisManager->AddNtupleRow(4);
   if ( analysisManager->GetH1(1) ) {
     G4cout << G4endl << " ----> print histograms statistic ";
     if(isMaster) {

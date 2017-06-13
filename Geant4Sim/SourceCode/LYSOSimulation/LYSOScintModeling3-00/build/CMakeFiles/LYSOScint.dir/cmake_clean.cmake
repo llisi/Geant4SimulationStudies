@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/LYSOScint.dir/src/ScintEventAction.cc.o"
   "CMakeFiles/LYSOScint.dir/src/ScintPrimaryGeneratorAction.cc.o"
   "CMakeFiles/LYSOScint.dir/src/ScintRunAction.cc.o"
+  "CMakeFiles/LYSOScint.dir/src/SteppingAction.cc.o"
   "CMakeFiles/LYSOScint.dir/src/TrackingAction.cc.o"
   "LYSOScint.pdb"
   "LYSOScint"

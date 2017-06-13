@@ -1,5 +1,4 @@
 //
-//
 // ********************************************************************
 // * License and Disclaimer                                           *
 // *                                                                  *
@@ -24,74 +23,80 @@
 // * acceptance of all terms of the Geant4 Software license.          *
 // ********************************************************************
 //
-// $Id: ScintCalorHit.cc 69586 2013-05-08 14:20:11Z gcosmo $
-//
-/// \file ScintCalorHit.cc
-/// \brief Implementation of the ScintCalorHit class
+// $Id: SteppingAction.cc 100946 2016-11-03 11:28:08Z gcosmo $
+// 
+/// \file SteppingAction.cc
+/// \brief Implementation of the SteppingAction class
 
-#include "ScintCalorHit.hh"
-#include "G4UnitsTable.hh"
-#include "G4VVisManager.hh"
-#include "G4Circle.hh"
-#include "G4Colour.hh"
-#include "G4VisAttributes.hh"
+#include "SteppingAction.hh"
+#include "ScintEventAction.hh"
+#include "ScintRunAction.hh"
+#include "ScintAnalysis.hh"
 
-#include <iomanip>
+#include "ScintDetectorConstruction.hh"
+#include "G4RunManager.hh"
+#include "G4Event.hh"
+#include "G4SDManager.hh"
+#include "G4Track.hh"
 
-G4ThreadLocal G4Allocator<ScintCalorHit>* ScintCalorHitAllocator = 0;
+#include "G4Step.hh"
+#include "G4RunManager.hh"
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-ScintCalorHit::ScintCalorHit()
- : G4VHit(),
-   fEdep(0.),
-   fTrackLength(0.),
-   fTrackPos()
+SteppingAction::SteppingAction()
+  : G4UserSteppingAction()
 {}
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-ScintCalorHit::~ScintCalorHit() {}
+SteppingAction::~SteppingAction()
+{}
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-ScintCalorHit::ScintCalorHit(const ScintCalorHit& right)
-  : G4VHit()
+void SteppingAction::UserSteppingAction(const G4Step* step)
 {
-  fEdep        = right.fEdep;
-  fTrackLength = right.fTrackLength;
-  fTrackPos    = right.fTrackPos;
-}
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+  G4int NumberOne = 1;
 
-const ScintCalorHit& ScintCalorHit::operator=(const ScintCalorHit& right)
-{
-  fEdep        = right.fEdep;
-  fTrackLength = right.fTrackLength;
-  fTrackPos    = right.fTrackPos;
+  //This does not ever happen but keeps a warning from being given on compiling 
 
-  return *this;
-}
+  if (NumberOne != 1){
+    G4cout << "THIS SHOULD NEVER HAPPEND " << step;
+  }
+  
+// Collect energy and track length step by step
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+  // get volume of the current step
 
-G4int ScintCalorHit::operator==(const ScintCalorHit& right) const
-{
-  return ( this == &right ) ? 1 : 0;
-}
+  /*
+  auto volumeName = step->GetPreStepPoint()->GetTouchableHandle()->GetVolume()->GetName();
+  auto volumePosition = step->GetPreStepPoint()->GetTouchableHandle()->GetVolume()->GetTranslation();
+  auto edep = step->GetTotalEnergyDeposit();
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+  auto analysisManager = G4AnalysisManager::Instance();
 
-void ScintCalorHit::Print()
-{
-  G4cout
-     << "Edep: " 
-     << std::setw(7) << G4BestUnit(fEdep,"Energy")
-     << " track length: " 
-     << std::setw(7) << G4BestUnit( fTrackLength,"Length")
-     << " Position" << fTrackPos
-     << G4endl;
+  //G4cout << volumeName << volumeCopyNo << G4endl;
+
+  if (volumeName == "Pixel"){
+
+
+    analysisManager->FillNtupleDColumn(5,0,edep);
+    analysisManager->FillNtupleDColumn(5,1,volumePosition.x());
+    analysisManager->FillNtupleDColumn(5,2,volumePosition.y());
+    analysisManager->FillNtupleDColumn(5,3,volumePosition.z());
+    analysisManager->AddNtupleRow(5);
+
+    auto EdepIdTest = analysisManager->GetH2Id("EdepTest",true);
+
+    analysisManager->FillH2(EdepIdTest, volumePosition.z(), volumePosition.x(), edep);
+
+  }
+  */
+  
+  // energy deposit
+  
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

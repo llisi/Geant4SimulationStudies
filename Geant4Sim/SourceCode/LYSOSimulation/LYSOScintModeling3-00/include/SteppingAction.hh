@@ -1,5 +1,4 @@
 //
-//
 // ********************************************************************
 // * License and Disclaimer                                           *
 // *                                                                  *
@@ -24,74 +23,35 @@
 // * acceptance of all terms of the Geant4 Software license.          *
 // ********************************************************************
 //
-// $Id: ScintCalorHit.cc 69586 2013-05-08 14:20:11Z gcosmo $
-//
-/// \file ScintCalorHit.cc
-/// \brief Implementation of the ScintCalorHit class
+// $Id: SteppingAction.hh 68058 2013-03-13 14:47:43Z gcosmo $
+// 
+/// \file SteppingAction.hh
+/// \brief Definition of the SteppingAction class
 
-#include "ScintCalorHit.hh"
-#include "G4UnitsTable.hh"
-#include "G4VVisManager.hh"
-#include "G4Circle.hh"
-#include "G4Colour.hh"
-#include "G4VisAttributes.hh"
+#ifndef SteppingAction_h
+#define SteppingAction_h 1
 
-#include <iomanip>
+#include "G4UserSteppingAction.hh"
 
-G4ThreadLocal G4Allocator<ScintCalorHit>* ScintCalorHitAllocator = 0;
+class DetectorConstruction;
+class EventAction;
 
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+/// Stepping action class.
+///
+/// In UserSteppingAction() there are collected the energy deposit and track 
+/// lengths of charged particles in Absober and Gap layers and
+/// updated in EventAction.
 
-ScintCalorHit::ScintCalorHit()
- : G4VHit(),
-   fEdep(0.),
-   fTrackLength(0.),
-   fTrackPos()
-{}
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
-ScintCalorHit::~ScintCalorHit() {}
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
-ScintCalorHit::ScintCalorHit(const ScintCalorHit& right)
-  : G4VHit()
+class SteppingAction : public G4UserSteppingAction
 {
-  fEdep        = right.fEdep;
-  fTrackLength = right.fTrackLength;
-  fTrackPos    = right.fTrackPos;
-}
+public:
+  SteppingAction();
+  virtual ~SteppingAction();
+
+  virtual void UserSteppingAction(const G4Step* step);
+     
+};
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-const ScintCalorHit& ScintCalorHit::operator=(const ScintCalorHit& right)
-{
-  fEdep        = right.fEdep;
-  fTrackLength = right.fTrackLength;
-  fTrackPos    = right.fTrackPos;
-
-  return *this;
-}
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
-G4int ScintCalorHit::operator==(const ScintCalorHit& right) const
-{
-  return ( this == &right ) ? 1 : 0;
-}
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
-void ScintCalorHit::Print()
-{
-  G4cout
-     << "Edep: " 
-     << std::setw(7) << G4BestUnit(fEdep,"Energy")
-     << " track length: " 
-     << std::setw(7) << G4BestUnit( fTrackLength,"Length")
-     << " Position" << fTrackPos
-     << G4endl;
-}
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+#endif
